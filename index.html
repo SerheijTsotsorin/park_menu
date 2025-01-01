@@ -58,6 +58,33 @@
             color: white;
             margin-top: 20px;
         }
+         /* Адаптивні стилі */
+         @media (max-width: 600px) {
+            header img {
+                max-width: 80px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            .menu {
+                padding: 10px;
+            }
+            .menu h2 {
+                font-size: 16px;
+            }
+            .menu-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .menu-item div {
+                width: 100%;
+                text-align: left;
+            }
+            .menu-item span {
+                display: block;
+                margin-top: 5px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -177,8 +204,8 @@
             <div><span>Ціна: 120 грн</span></div>
         </div>
         <div class="menu-item">
-            <div>Напалеон</div>
-            <div>(класичний торт Напалеон)</div>
+            <div>Наполеон</div>
+            <div>(класичний торт Наполеон)</div>
             <div>120г.</div>
             <div><span>Ціна: 90 грн</span></div>
         </div>
