@@ -40,16 +40,19 @@
             color: #2a9d8f;
         }
         .menu-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px solid #e0e0e0;
+        display: grid;
+        grid-template-columns: 2fr 3fr 1fr 1fr; /* Встановлюємо пропорції стовпців */
+        gap: 10px; /* Проміжки між стовпцями */
+        align-items: center; /* Вирівнюємо по центру вертикалі */
+        padding: 10px 0;
+        border-bottom: 1px solid #e0e0e0;
         }
-        .menu-item:last-child {
-            border-bottom: none;
+        .menu-item div {
+            text-align: left; /* Вирівнювання тексту всередині стовпців */
         }
         .menu-item span {
             font-weight: bold;
+            color: #2a9d8f; /* Колір ціни */
         }
         footer {
             text-align: center;
@@ -73,21 +76,21 @@
                 font-size: 16px;
             }
            
-            .menu-item {
+        .menu-item {
         display: grid;
         grid-template-columns: 2fr 3fr 1fr 1fr; /* Встановлюємо пропорції стовпців */
         gap: 10px; /* Проміжки між стовпцями */
         align-items: center; /* Вирівнюємо по центру вертикалі */
         padding: 10px 0;
         border-bottom: 1px solid #e0e0e0;
-    }
-    .menu-item div {
-        text-align: left; /* Вирівнювання тексту всередині стовпців */
-    }
-    .menu-item span {
-        font-weight: bold;
-        color: #2a9d8f; /* Колір ціни */
-    }
+        }
+        .menu-item div {
+            text-align: left; /* Вирівнювання тексту всередині стовпців */
+        }
+        .menu-item span {
+            font-weight: bold;
+            color: #2a9d8f; /* Колір ціни */
+        }
         }
     </style>
 </head>
