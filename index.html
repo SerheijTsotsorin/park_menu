@@ -72,18 +72,22 @@
             .menu h2 {
                 font-size: 16px;
             }
+           
             .menu-item {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .menu-item div {
-                width: 100%;
-                text-align: left;
-            }
-            .menu-item span {
-                display: block;
-                margin-top: 5px;
-            }
+        display: grid;
+        grid-template-columns: 2fr 3fr 1fr 1fr; /* Встановлюємо пропорції стовпців */
+        gap: 10px; /* Проміжки між стовпцями */
+        align-items: center; /* Вирівнюємо по центру вертикалі */
+        padding: 10px 0;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .menu-item div {
+        text-align: left; /* Вирівнювання тексту всередині стовпців */
+    }
+    .menu-item span {
+        font-weight: bold;
+        color: #2a9d8f; /* Колір ціни */
+    }
         }
     </style>
 </head>
